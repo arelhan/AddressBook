@@ -14,6 +14,7 @@ namespace AddressBook.Data.Context
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<PersonDetail> PersonDetails { get; set; }
         public AppDbContext()
         {
             

@@ -9,10 +9,12 @@ namespace AddressBook.Core.Entities
 {
     public abstract class EntitiyBase : IEntityBase
     {
+        
         [Key]
         public virtual Guid Id { get; set; } = Guid.NewGuid(); // Common identifier for all entities
         public virtual DateTime CreatedDate { get; set; } = DateTime.Now;
         public virtual DateTime? ModifiedDate { get; set; }
         public virtual bool IsActive { get; set; } = true; // Active/Inactive flag
+        public virtual string? Detail {  get; set; }
     }
 }

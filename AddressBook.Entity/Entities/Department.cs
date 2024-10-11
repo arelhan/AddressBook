@@ -5,9 +5,7 @@ namespace AddressBook.Entity.Entities
     public class Department : EntitiyBase
     {
         public string DepartmentName { get; set; }
-
-        // Navigation property
-        public ICollection<Position> Positions { get; set; }
+        public Guid CompanyId { get; set; }
         
     }
 }
